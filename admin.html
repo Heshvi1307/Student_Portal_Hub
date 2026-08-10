@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - StudentHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a href="#main-content">Skip to main content</a>
+
+    <header>
+        <h1>StudentHub Northgate</h1>
+
+        <nav aria-label="Admin Navigation">
+            <a href="index.html">Home</a> |
+            <a href="dashboard.html">Dashboard</a> |
+            <a href="events.html">Events</a> |
+            <a href="admin.html" aria-current="page">Admin</a> |
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <nav aria-label="Breadcrumb">
+            <p>
+                <a href="index.html">Home</a> &gt; Admin
+            </p>
+        </nav>
+
+        <section>
+            <h2>StudentHub Administration</h2>
+
+            <p>
+                Welcome to the StudentHub staff administration area.
+            </p>
+        </section>
+
+        <section>
+            <h2>System Reports</h2>
+
+            <table border="1">
+                <caption>StudentHub system reports</caption>
+
+                <thead>
+                    <tr>
+                        <th>Report</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Students below attendance threshold</td>
+                        <td>128</td>
+                    </tr>
+
+                    <tr>
+                        <td>Outstanding fees</td>
+                        <td>£46,200</td>
+                    </tr>
+
+                    <tr>
+                        <td>Portal logins this week</td>
+                        <td>61,904</td>
+                    </tr>
+
+                    <tr>
+                        <td>Feedback responses</td>
+                        <td>1,472</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>System Settings</h2>
+
+            <form>
+
+                <p>
+                    <input type="checkbox" id="two-factor" name="two-factor" checked>
+
+                    <label for="two-factor">
+                        Require two-factor sign-in for staff
+                    </label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="events" name="events" checked>
+
+                    <label for="events">
+                        Allow societies to publish events
+                    </label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="registration" name="registration">
+
+                    <label for="registration">
+                        Allow external applicants to register
+                    </label>
+                </p>
+
+                <p>
+                    <label for="role">Default New Account Role:</label>
+
+                    <select id="role" name="role">
+                        <option>Student</option>
+                        <option>Tutor</option>
+                        <option>Registry</option>
+                    </select>
+                </p>
+
+                <button type="submit">Save Settings</button>
+
+            </form>
+        </section>
+
+        <aside>
+            <h2>Admin Note</h2>
+            <p>
+                Only authorised staff members should access this page.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; StudentPortal</p>
+    </footer>
+
+</body>
+
+</html>
